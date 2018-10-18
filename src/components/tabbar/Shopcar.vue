@@ -1,19 +1,18 @@
 <template>
-    <p>{{msg}}</p>
+<div>
+<p>this---shopcar</p>
+</div>
 </template>
 
 <script>
     export default {
-    name:'fish',
+    name:'shopcar',
     data(){
         return {
-            msg:'海里有鱼'
         }
     }
 }
 </script>
 <style scoped>
-    p{
-        color: silver
-    }
+
 </style>

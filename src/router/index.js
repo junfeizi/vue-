@@ -1,18 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-// import welcome from '@/components/welcome'
-// import mountain from '@/components/mountain'
-// import sea from '@/components/sea'
-// import monkey from '@/components/monkey'
-// import fish from '@/components/fish'
+import Home from '@/components/tabbar/Home.vue'
+import Member from '@/components/tabbar/Member.vue'
+import Shopcar from '@/components/tabbar/Shopcar.vue'
+import Search from '@/components/tabbar/Search.vue'
+
 
 
 Vue.use(Router)
 
 export default new Router({
     routes: [{
-        path: '/'
-
-    }]
+        path: '/home',
+        name: 'home',
+        component: Home
+    }, {
+        path: '/member',
+        name: 'member',
+        component: Member
+    }, {
+        path: '/shopcar',
+        name: 'shopcar',
+        component: Shopcar
+    }, {
+        path: '/search',
+        name: 'search',
+        component: Search
+    }, {
+        path: '*',
+        redirect: '/home'
+    }],
+    linkActiveClass: 'mui-active'
 })

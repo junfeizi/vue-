@@ -10,6 +10,11 @@ Vue.use(MintUI)
 
 //vue-cli中引入mui
 import './assets/mui/css/mui.min.css'
+import './assets/mui/css/icons-extra.css'
+
+// 2.2 安装vue-resource
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 Vue.config.productionTip = false
 

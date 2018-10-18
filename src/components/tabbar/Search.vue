@@ -1,20 +1,18 @@
 <template>
-    <p>{{msg}}</p>
+<div>
+<p>this---search</p>
+</div>
 </template>
 
 <script>
     export default {
-    name:'monkey',
+    name:'search',
     data(){
         return {
-            msg:'山上有猴子'
         }
     }
 }
 </script>
-
 <style scoped>
-    p{
-        color: rgb(199, 8, 8)
-    }
+
 </style>
