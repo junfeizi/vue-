@@ -5,6 +5,10 @@ import Home from '@/components/tabbar/Home.vue'
 import Member from '@/components/tabbar/Member.vue'
 import Shopcar from '@/components/tabbar/Shopcar.vue'
 import Search from '@/components/tabbar/Search.vue'
+import Newlist from '@/components/news/newlist.vue'
+import NewInfo from '@/components/news/newinfo.vue'
+
+
 
 
 
@@ -28,8 +32,14 @@ export default new Router({
         name: 'search',
         component: Search
     }, {
+        path: '/home/newslist',
+        component: Newlist
+    }, {
+        path: '/home/newinfo/:id',
+        component: NewInfo
+    }, {
         path: '*',
         redirect: '/home'
-    }],
+    }, ],
     linkActiveClass: 'mui-active'
 })

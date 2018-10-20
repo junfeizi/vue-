@@ -16,6 +16,15 @@ import './assets/mui/css/icons-extra.css'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
+//引入时间格式化过滤器
+import moment from 'moment'
+Vue.filter('dateFormat', function(datastr, pattern = 'YYYY-MM-DD HH:mm:ss') {
+    return moment(datastr).format(pattern)
+})
+
+//配全局根路径
+Vue.http.options.root = 'http://027xin.com:8899'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
