@@ -27,6 +27,8 @@ Vue.http.options.root = 'http://027xin.com:8899'
 
 Vue.config.productionTip = false
 
+
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
